@@ -1,0 +1,15 @@
+Calculadora de Gastos Mensuales
+Algoritmo
+
+Start
+Crear un diccionario vacío llamado gastos_por_categoria para almacenar las categorías y sus totales.
+Crear una variable total_general y asignarle el valor 0.
+Loop: Repetir los siguientes pasos hasta que el usuario elija finalizar:
+Solicitar al usuario el monto del gasto.
+Solicitar la categoría del gasto.
+Si la categoría existe en gastos_por_categoria, añadir el monto al total de esa categoría.
+Si la categoría no existe, crearla en gastos_por_categoria con el monto inicial.
+Añadir el monto al total_general.
+Preguntar al usuario si desea ingresar otro gasto. Si responde "no", salir del bucle.
+Mostrar el total de gastos por cada categoría y el total_general.
+End

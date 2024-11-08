@@ -1,0 +1,29 @@
+Start
+    Definir gastos_por_categoria como un diccionario vacío
+    Definir total_general como 0
+
+    Hacer:
+        Escribir "Ingrese el monto del gasto: "
+        Leer monto
+        
+        Escribir "Ingrese la categoría del gasto: "
+        Leer categoria
+        
+        Si categoria existe en gastos_por_categoria Entonces
+            gastos_por_categoria[categoria] = gastos_por_categoria[categoria] + monto
+        Sino
+            gastos_por_categoria[categoria] = monto
+        FinSi
+        
+        total_general = total_general + monto
+        
+        Escribir "¿Desea ingresar otro gasto? (si/no): "
+        Leer respuesta
+    Mientras respuesta sea "si"
+
+    Para cada categoria en gastos_por_categoria
+        Escribir "Total en", categoria, ":", gastos_por_categoria[categoria]
+    FinPara
+
+    Escribir "Gasto total:", total_general
+End
